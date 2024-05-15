@@ -19,34 +19,82 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        gap: 10px 50px;
-        height: 500px;
+        gap: 5px 50px;
+        height: 100vh;
                
       }
       .pricing-plan{
         display: flex;
         flex-direction: column;
-        background-color: rgb(231, 227, 227);
-        flex-basis: 200px;
+        flex: 1;
+        background-color: #f2f2f2;
+        flex-basis: 300px;
+        justify-content: center;
         align-content: center;
         align-items: center;
         border-width: 0px;
         border-radius: 10px;
+        height: 250px;
         
 
       }
       .plan-button{
-        background-color: orange;
-        border-width: 0px;
-        border-radius: 1px;
+        padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
       }
-      .pricing-title{
+      
+      .plan-price{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .plan-title{
         font-weight: bold;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (min-width: 481px) and (max-width:1600px) {
+      @media (min-width: 319px) and (max-width:400px) {
+        .pricing-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          gap: 20px 80px;
+          height: 600px;
+        }
+        .pricing-plan{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          width: 300px;          
+        }
+      }  
+      @media (min-width: 481px) and (max-width:1200px){
+          .pricing-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          gap: 20px 80px;
+          height: 100%;
+        }
+        .pricing-plan{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          width: 300px;     
+        }
+    
       }
+      
+
+
     </style>
   </head>
 
