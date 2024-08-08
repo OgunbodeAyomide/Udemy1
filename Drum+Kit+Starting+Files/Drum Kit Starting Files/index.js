@@ -1,3 +1,7 @@
-function handleClick() {
-    alert("I just Got Clicked")
+var noOfDrumClass = document.querySelectorAll(".drum").length;
+for (var i = 0; i < noOfDrumClass; i++) {
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+        var audio = new Audio("sounds/tom-1.mp3");
+        audio.play();
+    });
 }
