@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Backend Projects"
+		}
+	],
+	"settings": {
+		"liveServer.settings.CustomBrowser": "chrome",
+		"liveServer.settings.fullReload": true
+	}
+}
